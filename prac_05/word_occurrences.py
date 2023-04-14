@@ -12,11 +12,11 @@ for i in sentence.split():
     else:
         COUNT_WORDS[i] += 1
 
-list = []
+sorted_list = []
 for word in COUNT_WORDS:
-    list.append(word)
+    sorted_list.append(word)
 
-list.sort()
-for i in list:
+sorted_list.sort()
+for i in sorted_list:
     print(f"{i:<10}: {COUNT_WORDS[i]}")
 
